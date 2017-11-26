@@ -1,0 +1,5 @@
+<div class="showValue">   
+    <span>{{ timeRender }}</span>
+    <div class="progressBar" progressBar [style.width.%]="widthVal" [time]="seconds"></div>
+    <button class="downButton" (click)="stopCountDown()">STOP</button>
+</div>

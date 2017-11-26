@@ -1,0 +1,17 @@
+body {
+    -webkit-user-select: none;
+    height: 100%;
+    background-color: rgba(25, 25, 25, 0.96);
+    overflow: hidden;
+    color: #fff;
+    margin: 0px;
+  
+}
+
+a,
+a:active,
+a:-webkit-any-link {
+    text-decoration: none;
+    color: #fff;
+}
+

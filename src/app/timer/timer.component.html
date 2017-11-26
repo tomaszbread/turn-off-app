@@ -1,0 +1,34 @@
+  <div class="timer"  >
+  <div class="item timer-hours" >
+    <svg version="1.1"  (click)="upHoursClick(timerHours); setTime(timerHours, timerMinutes)"   class="arrow-up" x="0px" y="0px" viewBox="142 425.4 133 135"
+      enable-background="new 142 425.4 133 135" xml:space="preserve">
+      <path d="M174.7,530.3L157,512.6c-0.7-0.7-0.7-2,0-2.8l50.1-50.1c0.7-0.7,2-0.7,2.8,0l19.2,19.2l30.9,30.9c0.7,0.7,0.7,2,0,2.8
+	l-17.7,17.7c-0.7,0.7-2,0.7-2.8,0l-30.9-30.9l-31,30.9C176.7,531.1,175.4,531.1,174.7,530.3z" />
+    </svg>
+<!-- <pre>{{timerHours | json}}</pre> -->
+     <input type="text"  class="likeInput"   [(ngModel)]="timerHours" limit-to="2"  OnlyNumber="true"  (change)='setTime(timerHours, timerMinutes)' (blur)="valueValidatorHour(timerHours)" /> 
+     <!-- (blur)="valueValidatorHour(formHour.value)" -->
+      <!-- <input type="text"  class="likeInput"   limit-to="2"  OnlyNumber="true"  ngModel="{{timerHours | }}" (change)='setTime(timerHours, timerMinutes)' (blur)="valueValidatorHour(formHour.value)" />  -->
+    <svg version="1.1"  class="arrow-down" (click)=" downHoursClick(timerHours); setTime(timerHours, timerMinutes);"   x="0px" y="0px" viewBox="142 425.4 133 135" enable-background="new 142 425.4 133 135"
+      xml:space="preserve">
+      <path d="M242.3,459.7l17.7,17.7c0.7,0.7,0.7,2,0,2.8l-50.1,50.1c-0.7,0.7-2,0.7-2.8,0l-19.2-19.2L157,480.3c-0.7-0.7-0.7-2,0-2.8
+	l17.7-17.7c0.7-0.7,2-0.7,2.8,0l30.9,30.9l31-30.9C240.3,458.9,241.6,458.9,242.3,459.7z" />
+    </svg>
+  </div>
+  <span class="item colon">:</span>
+  <div class="item timer-minutes">
+    <svg version="1.1"  class="arrow-down" (click)="upMinutesClick(timerMinutes); setTime(timerHours, timerMinutes)"  x="0px" y="0px" viewBox="142 425.4 133 135" enable-background="new 142 425.4 133 135"
+      xml:space="preserve">
+      <path d="M174.7,530.3L157,512.6c-0.7-0.7-0.7-2,0-2.8l50.1-50.1c0.7-0.7,2-0.7,2.8,0l19.2,19.2l30.9,30.9c0.7,0.7,0.7,2,0,2.8
+	l-17.7,17.7c-0.7,0.7-2,0.7-2.8,0l-30.9-30.9l-31,30.9C176.7,531.1,175.4,531.1,174.7,530.3z" />
+    </svg>
+   <!-- <input type="text"  class="likeInput"  [formControl]="formMinutes" limit-to="2"  OnlyNumber="true"  [(value)]="timerMinutes" (change)='setTime(timerHours, timerMinutes)' (blur)="valueValidatorMinutes(formMinutes)" />  -->
+   <input type="text" class="likeInput" [(ngModel)]="timerMinutes" limit-to="2"  OnlyNumber="true" (change)='setTime(timerHours, timerMinutes)' (blur)="valueValidatorMinutes(timerMinutes)"/>
+    <svg version="1.1"  class="arrow-down" (click)=" downMinutesClick(timerMinutes); setTime(timerHours, timerMinutes);"   x="0px" y="0px" viewBox="142 425.4 133 135" enable-background="new 142 425.4 133 135"
+      xml:space="preserve">
+      <path d="M242.3,459.7l17.7,17.7c0.7,0.7,0.7,2,0,2.8l-50.1,50.1c-0.7,0.7-2,0.7-2.8,0l-19.2-19.2L157,480.3c-0.7-0.7-0.7-2,0-2.8
+	l17.7-17.7c0.7-0.7,2-0.7,2.8,0l30.9,30.9l31-30.9C240.3,458.9,241.6,458.9,242.3,459.7z" />
+    </svg>
+  </div>
+</div> 
+

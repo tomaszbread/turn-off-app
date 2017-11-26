@@ -1,0 +1,60 @@
+
+
+.logo {
+    display: flex;
+    padding-left: 10px;
+    svg {
+        height: 50px;
+        width: 80px;
+        path,
+        rect {
+            fill: #818181
+        }
+    }
+    .logo-txt {
+        -webkit-app-region: no-drag;
+        padding-left: 15px;
+        font-size: 20px;
+        color: #fff;
+        line-height: 3.5;
+        text-transform: uppercase;
+        span:nth-child(1) {
+            font-family: 'Gotham-Light'
+        }
+        span:nth-child(2) {
+            font-family: 'Gotham-Medium'
+        }
+    }
+}
+
+.windows-icon {
+    display: flex;
+    width: 15%;
+    line-height: 3;
+    flex-direction: row;
+    justify-content: space-around;
+    .x {
+        -webkit-app-region: no-drag;
+        cursor: pointer;
+        svg {
+            width: 16px
+        }
+    }
+    .minimal {
+        -webkit-app-region: no-drag;
+        cursor: pointer;
+        padding-top: 5px;
+        //padding-right: 15px;
+        svg {
+            width: 20px
+        }
+    }
+    svg {
+        .win-ico-color {
+            fill: #fff;
+            &:hover {
+                fill: #a4a4a4
+            }
+        }
+    }
+}

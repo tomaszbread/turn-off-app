@@ -1,0 +1,86 @@
+.timer {
+    -webkit-app-region: no-drag;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -40px;
+    .colon {
+        color: #fff;
+        font-family: 'Gotham-Medium';
+        font-size: 55px;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .likeInput {
+            background-color: transparent;
+            border: none;
+            color: #8d8d8d;
+            font-family: 'Gotham-Medium';
+            font-size: 50px;
+            width: 90px;
+            text-align: center;
+            margin: 0px 19px;
+        }
+    }
+}
+
+.arrow-up,
+.arrow-down {
+    cursor: pointer;
+    fill: #545454;
+    width: 28px;
+    margin: 7px;
+    -webkit-app-region: no-drag;
+    &:hover{
+      fill: #fff;
+      cursor: pointer;
+    }
+}
+ input:focus{
+    outline: none;
+}
+
+input::selection{
+       background: rgba(115, 115, 115, 0.22);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="time"]::-webkit-outer-spin-button,
+input[type="time"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;
+}
+/* Hide the cancel button */
+::-webkit-search-cancel-button { 
+    -webkit-appearance: none; 
+}
+
+/* Hide the magnifying glass */
+::-webkit-search-results-button {
+     -webkit-appearance: none; 
+}
