@@ -1,0 +1,61 @@
+
+
+<header-template [@fadeIn]='state'></header-template>
+<div class="shutdown-options">
+<like-background-svg [@fadeIn]='state' ></like-background-svg>
+<svg (window:mouseup)="closeForDropdown($event)" version="1.1" [@fadeIn]='state' [ngClass]="{'heartBeatLogo': countDownStart == true , '': countDownStart == false}" class="logo" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+    <path d="M314,402.4c17.1,0,30.6-13.5,30.6-30.6V188.2c0-17.1-13.5-30.6-30.6-30.6s-30.6,13.5-30.6,30.6v183.6
+	C283.4,388.9,296.9,402.4,314,402.4z" />
+    <path d="M525.8,199.2c-52.6-31.2-126.1-9.8-156.1,30.6c-10.4,13.5-7.3,32.4,6.1,42.8c13.5,10.4,32.4,7.3,42.8-6.1
+	c13.5-17.7,52.6-28.2,75.9-14.7c11.6,7.3,46.5,39.8-11,165.9c-60.6,131.6-134.6,179.9-170.7,180.5c-36.1-0.6-110.2-49-170.7-181.2
+	C84.5,291,119.4,258.6,131,251.2c23.3-14.1,62.4-3.7,75.9,14.7c10.4,13.5,29.4,16.5,42.8,6.1c13.5-10.4,16.5-29.4,6.1-42.8
+	c-30-40.4-103.4-61.8-156.1-30.6c-36.7,21.4-86.9,82-13.5,243.6c72.2,159.1,165.9,216,225.2,217.3c0,0,0,0,0.6,0h0.6h0.6h0.6
+	c93.6-1.2,179.9-117.5,225.2-216.6C612,281.2,561.9,220.6,525.8,199.2z" />
+</svg>
+<div class="options" [@fadeIn]='state'>
+    <div class="optionDropdown" *ngIf="countDownOptions"  >
+        <div class="textFlex">
+            <span>turn off:</span>
+            <br>
+            <span class="optionVal">{{optionChoose}}</span>
+        </div>
+        <span class="detailsButton" (click)="isOpen = !isOpen;validMessage = false;validOption = false" (window:mouseup)="closeForDropdown($event)">
+            <div class="load-3 " [ngClass]="{'valid': validOption == true , '': validOption == false}">
+                <div class="line validLine"></div>
+                <div class="line validLine"></div>
+                <div class="line validLine"></div>
+            </div>
+        </span>
+        <div class="dropdownMenu" [hidden]="!isOpen" (click)="isOpen = true">
+            <ul class="option-list">
+                <li>
+                    <input [(ngModel)]="option1" (change)="validTime('at selected hour');option2=false" type="checkbox" id="option1" name="option1"
+                        required/>
+                    <label for="option1">at selected hour</label>
+                </li>
+                <li>
+                    <input [(ngModel)]="option2" (change)="validTime('after specified time period');option1=false" type="checkbox" id="option2"
+                        name="option2" required/>
+                    <label for="option2">after specified time period</label>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+   
+    <timer *ngIf="countDownOptions" (emitMessageClose)="closeMessage($event)" (emitMessageShowFormatH)="showFormatTimeHour($event)" (emitMessageShowFormatM)="showFormatTimeMinutes($event)"></timer>
+    <span [@slideBootom]='state' class="infoError" *ngIf="validMessage">select options and set the time</span>
+    <span [@slideBootom]='state' class="infoError" *ngIf="showFormatHours">only 24 hours format</span>
+     <span [@slideBootom]='state' class="infoError" *ngIf="showFormatMinutes">max set 60 minutes</span>
+    <button *ngIf="countDownOptions" class="downButton" (click)="runCountDown($event, time)">START</button>
+    <div *ngIf="countDownStart" class="countDown" >
+        <countdown  class="countDown" [seconds]="timeToSeconds" [start]="start" (shutdownView)="chldComponentResponse($event)"></countdown>
+      
+    </div>
+
+
+
+</div>
+</div>

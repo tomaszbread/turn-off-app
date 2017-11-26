@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-app-region: no-drag;
+}
+
+.option-list {
+  padding-top: 25px;
+  font-family: 'Gotham-Book';
+  list-style: none;
+}
+
+.option-list li {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container-options {
+  z-index: -999999999999999999;
+  -webkit-app-region: no-drag;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+  height: 250px;
+}
+
+.click_menu {
+  margin-right: 40px;
+}
+
+input[type=time] {
+  font-family: 'Roboto Mono', monospace;
+  width: 276px;
+  height: 57px;
+  font-size: 39px;
+  text-indent: 15px;
+  margin-top: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+input[type=time]:hover {
+  background-color: rgba(119, 117, 117, 0.18);
+}
+
+input[type=time]:focus {
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+}
+
+input[type=time]:blur {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+}
+
+input[type=time]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  cursor: pointer;
+  display: block;
+  width: 8px;
+  color: #333;
+  text-align: center;
+  position: relative;
+}
+
+input::-webkit-datetime-edit-ampm-field:focus,
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-hour-field:focus,
+input::-webkit-datetime-edit-millisecond-field:focus,
+input::-webkit-datetime-edit-minute-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-second-field:focus,
+input::-webkit-datetime-edit-week-field:focus,
+input::-webkit-datetime-edit-year-field:focus {
+  background-color: transparent;
+  -webkit-text-fill-color: #aaa;
+}
+
+#initButton {
+  height: 59px;
+  width: 200px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+  cursor: pointer;
+  margin-left: -1px;
+}
+
+#initButton:hover {
+  background-color: rgba(119, 117, 117, 0.18);
+  cursor: pointer;
+}
+
+.infoError {
+  font-family: 'Gotham-Medium';
+  font-size: 11px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: rgba(165, 42, 42, 0.26);
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 0px;
+  border: 2px solid brown;
+  width: 85.6%;
+  margin-top: 10px;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 14px;
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+}
+
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ddd;
+}
+
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+[type="checkbox"]:disabled:checked + label:before,
+[type="checkbox"]:disabled:not(:checked) + label:before {
+  border-color: #ccc;
+  background-color: #eee;
+}
+
+[type="checkbox"]:disabled:checked + label:after {
+  background: #aaa;
+}

@@ -1,0 +1,28 @@
+#heart-logo {
+    width: 100px;
+    fill: #818181;
+    -webkit-animation: beat 0.7s ease 0s infinite normal;
+    -moz-animation: beat 0.7s ease 0s infinite normal;
+    animation: beat 1s ease 0s infinite normal;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+        fill: #818181
+    }
+    50% {
+        transform: scale(1.2);
+        fill: #414141
+    }
+    100% {
+        transform: scale(1);
+        fill: #818181
+    }
+}
