@@ -1,5 +1,5 @@
 @import "font";
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
+// @import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
 
 @font-face {
 	@include font-face('Gotham-Bold', 'Gotham-Bold', '../font');
@@ -12,6 +12,15 @@
 }
 @font-face {
 	@include font-face('Gotham-Medium', 'Gotham-Medium', '../font');
+}
+@font-face {
+	@include font-face('Gotham-Medium', 'Gotham-Medium', '../font');
+}
+@font-face {
+    @include font-face('Roboto-Mono','RobotoMono-Medium','../fonts/');
+}
+@font-face {
+    @include font-face('Roboto','Roboto-Medium','../fonts/');
 }
 body {
 	-webkit-user-select: none;

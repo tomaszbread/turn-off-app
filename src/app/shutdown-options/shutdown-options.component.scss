@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 *:focus {
     outline: none;
 }
@@ -255,7 +255,7 @@ form {
 }
 
 input[type=time] {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto-Mono', monospace;
     width: 276px;
     height: 57px;
     font-size: 39px;
