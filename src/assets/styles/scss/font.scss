@@ -1,17 +1,35 @@
 @mixin font-face($name, $fn, $p) {
     font-family: '#{$name}';
-    src: url('#{$p}/#{$fn}.eot');
-    src: url('#{$p}/#{$fn}.eot?#iefix') format('embedded-opentype'),
-    url('#{$p}/#{$fn}.woff') format('woff'),
-    url('#{$p}/#{$fn}.ttf') format('truetype'),
-    url('#{$p}/#{$fn}.svg##{$name}') format('svg');
+    src: url('#{$p}/#{$fn}.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+// @mixin font-face($name, $fn, $p) {
+//     font-family: '#{$name}';
+//     src: url('#{$p}/#{$fn}.eot');
+//     src: url('#{$p}/#{$fn}.eot?#iefix') format('embedded-opentype'),
+//     url('#{$p}/#{$fn}.woff') format('woff'),
+//     url('#{$p}/#{$fn}.ttf') format('truetype'),
+//     url('#{$p}/#{$fn}.svg##{$name}') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
 
 @font-face {
     @include font-face('Gotham-Bold',
     'Gotham-Bold',
+    '../assets/fonts/');
+}
+
+@font-face {
+    @include font-face('Roboto-Mono',
+    'RobotoMono-Medium',
+    '../assets/fonts/');
+}
+@font-face {
+    @include font-face('Roboto',
+    'Roboto-Medium',
     '../assets/fonts/');
 }
 
