@@ -23,6 +23,6 @@ ___
     # Go into the repository
     cd turn-off-app
     # Install dependencies
-    cd yarn install
+    yarn install
     # Run the app
     yarn run start
