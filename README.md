@@ -1,4 +1,6 @@
-# turn-off-app
+
+<img src="https://raw.githubusercontent.com/tomaszchlebek/turn-off-app/gh-pages/img/icoico.png" width="35"  height="35"/>    ## **turn-off-app**
+
 Turn Off App is free and open source software to shutdown your computer at selected hour or after specifed time peroid avilable on Windows platform
 
 <p align="center">
