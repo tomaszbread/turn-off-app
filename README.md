@@ -7,6 +7,7 @@ Turn Off App is free and open source software to shutdown your computer at selec
 
 
 #### **Download**
+___
 
 | version | Link|
 | ------ | ----------- |
@@ -15,7 +16,7 @@ Turn Off App is free and open source software to shutdown your computer at selec
 
 
 ####  **Running Locally**
-
+___
 
     # Clone this repository
     git clone https://github.com/tomaszchlebek/turn-off-app.git
