@@ -1,7 +1,7 @@
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/tomaszchlebek/turn-off-app/gh-pages/img/icoico.png" width="35"  height="35"/> 
+<img src="https://raw.githubusercontent.com/tomaszchlebek/turn-off-app/gh-pages/img/icoico.png" width="50"  height="50"/> 
 </p>
 
 ### **TURN OFF APP**
