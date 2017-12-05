@@ -9,7 +9,7 @@ ___
 Turn Off App is free and open source software to shutdown your computer at selected hour or after specifed time peroid avilable on Windows platform
 
 <p align="center">
-  <img src="https://tomaszchlebek.github.io/turn-off-app/img/appForGithub.png" />
+  <img src="https://github.com/tomaszchlebek/turn-off-app/blob/gh-pages/img/turnOffGif.gif" />
 </p>
 
 
