@@ -44,13 +44,11 @@ export class TimerComponent implements OnInit {
   }
 
   valueValidatorHour(param) {
-    console.log(' CHUJ',  param)
     this.emitMessageShowFormatH.emit(false);
     var paramNumber = Number(param)
     if (param.length < 2) {
       if (paramNumber < 10) {
         this.timerHours = new CustomZeroPipe().transform(param)
-        console.log(' PLUS SÓL',  this.timerHours)
       }
     }
     if (paramNumber > 24) {
