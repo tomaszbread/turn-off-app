@@ -35,3 +35,12 @@ a {
   color: #fff; }
 
 /*# sourceMappingURL=app.3e077751276b9e225cea.css.map*/
+@media screen and (max-width: 575px) {
+  footer > .container {
+    padding: 40px 32px !important; } }
+
+@media screen and (max-width: 400px) {
+  my-app .logoContainer.logoContainer.logoContainer {
+    width: 205px !important; }
+  my-app .logoContainer #heart-logo {
+    width: 31px !important; } }
