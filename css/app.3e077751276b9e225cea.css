@@ -44,3 +44,30 @@ a {
     width: 205px !important; }
   my-app .logoContainer #heart-logo {
     width: 31px !important; } }
+
+@media screen and (max-width: 767px) {
+  my-app header {
+    position: -webkit-sticky !important;
+    position: sticky !important; }
+  my-app main {
+    margin-top: 0 !important; }
+  my-home > .container {
+    margin-top: 24px !important; } }
+
+@media screen and (max-width: 575px) {
+  my-home .svgTechnology.svgTechnology {
+    width: 110px;
+    height: 110px;
+    margin: 16px; } }
+
+my-home .downloadButton.downloadButton {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+@media screen and (max-width: 400px) {
+  my-home .downloadButton.downloadButton {
+    padding: 0 20px; } }
